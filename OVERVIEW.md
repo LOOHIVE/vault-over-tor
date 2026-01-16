@@ -90,7 +90,7 @@ if __name__ == "__main__":
 
 1.  **Vault Instance:** Runs in a locked-down container with `IPC_LOCK` enabled to prevent memory from being swapped to disk (security best practice).
 2.  **Encrypted Volume:** All data is stored in the `./data` directory using AES-GCM-256 encryption.
-3.  **Sidecar Tunnel:** The `tor-gate` container creates a virtual circuit to the Tor network and mapping a local `.onion` address to `vault:8200`.
+3.  **Tor Gate (Internal Port Mapping):** The container runs a Tor Hidden Service that maps **Port 80 (Onion)** to **Port 8200 (Vault)**. This allows you to access Vault using standard URLs without appending :8200.
 4.  **Health-Sync:** The tunnel does not open until Vault passes its internal readiness probe.
 
 ---

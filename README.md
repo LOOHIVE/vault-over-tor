@@ -10,6 +10,7 @@ Standard Vault deployments require complex VPNs or IP whitelisting for remote ac
 ## 🚀 Features
 - 🔒 **Zero Public Ports:** No ingress required on your firewall.
 - 🧅 **Onion Routing:** Metadata is hidden from ISPs and network snoopers.
+- 🌐 **Simplified Access:** Access Vault via port 80 on the darknet (maps to 8200 internally).
 - 🛡️ **End-to-End Encryption:** Traffic is encrypted by both TLS (optional) and the Tor network.
 - 📦 **Docker Primary:** Spin up a production-ready secret store in seconds.
 

@@ -21,7 +21,7 @@ RUN echo $'[supervisord]\nnodaemon=true\nuser=root\n\n[program:vault]\ncommand=v
 # Setup Tor configuration
 RUN echo $'DataDirectory /var/lib/tor\n\
 HiddenServiceDir /var/lib/tor/hidden_service/\n\
-HiddenServicePort 8200 127.0.0.1:8200\n\
+HiddenServicePort 80 127.0.0.1:8200\n\
 Log notice stdout' > /etc/tor/torrc
 
 EXPOSE 8200
