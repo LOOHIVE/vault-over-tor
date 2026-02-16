@@ -15,7 +15,7 @@ RUN mkdir -p /var/lib/tor/hidden_service && \
 RUN openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
     -keyout /etc/nginx/server.key \
     -out /etc/nginx/server.crt \
-    -subj "/C=UN/ST=Privacy/L=Tor/O=Sapphive/CN=vault-over-tor"
+    -subj "/C=UN/ST=Privacy/L=Tor/O=LOOHIVE/CN=vault-over-tor"
 
 # Copy configurations and scripts
 COPY config/vault-config.hcl /vault/config/vault-config.hcl

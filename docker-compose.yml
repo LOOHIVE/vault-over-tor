@@ -1,8 +1,8 @@
 services:
-  # Sapphive Vault-over-Tor (Single pullable image)
+  # LOOHIVE Vault-over-Tor (Single pullable image)
   vault-over-tor:
     build: .
-    image: sapphive/vault-over-tor:latest
+    image: loohive/vault-over-tor:latest
     container_name: vault-service
     ports:
       # Map host port to Vault (Internal: 8200)

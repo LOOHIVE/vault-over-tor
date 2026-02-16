@@ -1,6 +1,6 @@
-# <img src="https://raw.githubusercontent.com/SAPPHIVE/onion-pipe-relay/main/src/assets/logo/logo.png" height="32"> Vault-over-Tor (maintained by Sapphive)
+# <img src="https://raw.githubusercontent.com/loohive/onion-pipe-relay/main/src/assets/logo/logo.png" height="32"> Vault-over-Tor (maintained by LOOHIVE)
 
-**Vault-over-Tor** is a pre-configured, hardened HashiCorp Vault instance maintained by the Sapphive Infrastructure Team. It is accessible exclusively via Tor Onion Services, providing zero-knowledge secret storage with identity-hiding transport.
+**Vault-over-Tor** is a pre-configured, hardened HashiCorp Vault instance maintained by the LOOHIVE Infrastructure Team. It is accessible exclusively via Tor Onion Services, providing zero-knowledge secret storage with identity-hiding transport.
 
 ## 🚀 Architecture
 - **HashiCorp Vault**: The core secret engine.

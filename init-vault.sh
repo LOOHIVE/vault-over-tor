@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Sapphive Vault-over-Tor Initialization Helper
+# LOOHIVE Vault-over-Tor Initialization Helper
 echo "🛡️ Starting Vault Initialization..."
 
 # Set VAULT_ADDR to use HTTP explicitly to avoid the TLS redirect error

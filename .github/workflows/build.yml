@@ -41,8 +41,8 @@ jobs:
           push: true
           provenance: false
           tags: |
-            sapphive/vault-over-tor:latest
-            sapphive/vault-over-tor:${{ steps.meta.outputs.vault_version }}
-            sapphive/vault-over-tor:v1
+            loohive/vault-over-tor:latest
+            loohive/vault-over-tor:${{ steps.meta.outputs.vault_version }}
+            loohive/vault-over-tor:v1
           cache-from: type=gha
           cache-to: type=gha,mode=max

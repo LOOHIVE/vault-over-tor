@@ -1,9 +1,9 @@
-# <img src="https://raw.githubusercontent.com/SAPPHIVE/onion-pipe-relay/main/src/assets/logo/logo.png" height="32"> Vault-over-Tor (maintained by Sapphive)
+# <img src="https://raw.githubusercontent.com/loohive/onion-pipe-relay/main/src/assets/logo/logo.png" height="32"> Vault-over-Tor (maintained by LOOHIVE)
 
-![Docker Pulls](https://img.shields.io/docker/pulls/sapphive/vault-over-tor) ![License](https://img.shields.io/badge/license-MIT-green) ![Security](https://img.shields.io/badge/security-hardened-orange)
+![Docker Pulls](https://img.shields.io/docker/pulls/loohive/vault-over-tor) ![License](https://img.shields.io/badge/license-MIT-green) ![Security](https://img.shields.io/badge/security-hardened-orange)
 
 ## 🚀 The Solution
-**Vault-over-Tor** is an open-source project maintained by the Sapphive Infrastructure Team that orchestrates HashiCorp Vault for the darknet. It is designed for organizations and individuals who need to manage highly sensitive credentials across distributed networks without the cost or complexity of traditional VPNs, leased lines, or public-facing load balancers.
+**Vault-over-Tor** is an open-source project maintained by the LOOHIVE Infrastructure Team that orchestrates HashiCorp Vault for the darknet. It is designed for organizations and individuals who need to manage highly sensitive credentials across distributed networks without the cost or complexity of traditional VPNs, leased lines, or public-facing load balancers.
 
 By utilizing the **community Tor Onion Sidecar**, this suite exposes the Vault API exclusively through a Version 3 Onion Service.
 
@@ -48,7 +48,7 @@ Simply add this to your `docker-compose.yml` to get started. By default, it expo
 ```yaml
 services:
   vault-service:
-    image: sapphive/vault-over-tor:latest
+    image: loohive/vault-over-tor:latest
     container_name: vault-service
     ports:
       # Use VAULT_PORT env to change the host port (Default: 80)
@@ -93,7 +93,7 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 ONION_URL = "https://your_secret_address.onion/v1/secret/data/test"
 ROOT_TOKEN = "your_vault_root_token"
 
-# PROXY CONFIG (Must have Tor running locally, e.g., 'sapphive/tor:latest')
+# PROXY CONFIG (Must have Tor running locally, e.g., 'loohive/tor:latest')
 proxies = {
     'http': 'socks5h://127.0.0.1:9050',
     'https': 'socks5h://127.0.0.1:9050'
@@ -133,10 +133,10 @@ When deploying Vault-over-Tor in a production environment, ensure you follow the
 ---
 
 ## 🤝 Support & Maintenance
-Developed by the **Sapphive Infrastructure Team**.
-*   **Website:** [sapphive.com](https://sapphive.com)
-*   **Documentation:** [GitHub: sapphive/vault-over-tor](https://github.com/sapphive/vault-over-tor)
-*   **Support:** [support@sapphive.com](mailto:support@sapphive.com)
+Developed by the **LOOHIVE Infrastructure Team**.
+*   **Website:** [loohive.com](https://loohive.com)
+*   **Documentation:** [GitHub: loohive/vault-over-tor](https://github.com/loohive/vault-over-tor)
+*   **Support:** [support@loohive.com](mailto:support@loohive.com)
 
 ---
 
